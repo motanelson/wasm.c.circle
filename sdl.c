@@ -1,7 +1,3 @@
-// Copyright 2011 The Emscripten Authors.  All rights reserved.
-// Emscripten is available under two separate licenses, the MIT license and the
-// University of Illinois/NCSA Open Source License.  Both these licenses can be
-// found in the LICENSE file.
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -15,17 +11,7 @@ SDL_Surface *screen = NULL;
 
 void kernel_main(){
    printf("ok\n");
-  
-  
-       
-     
-     
-   
-
-  
-
-
-}
+ }
 
 int main() {
   SDL_Init(SDL_INIT_VIDEO);
@@ -39,7 +25,7 @@ int main() {
   for(int x=0;x<800;x=x+20)line(screen,x,0,x,600,0,0,0);
   for(int y=0;y<600;y=y+20)line(screen,0,y,800,y,0,0,0);
 
-  printf("\n\nxxxx\n ");
+  printf("\n\nok\n ");
   
   if (SDL_MUSTLOCK(screen)) SDL_UnlockSurface(screen);     
   SDL_Flip(screen);
