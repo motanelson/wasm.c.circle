@@ -36,9 +36,10 @@ int main() {
   
   if (SDL_MUSTLOCK(screen)) SDL_LockSurface(screen);
   clears(screen, 255, 255, 0);
-  
-  circle(screen,300,300,60,0,0,0);
-  printf("\n\nmmmm\n ");
+  for(int x=0;x<800;x=x+20)line(screen,x,0,x,600,0,0,0);
+  for(int y=0;y<600;y=y+20)line(screen,0,y,800,y,0,0,0);
+
+  printf("\n\nxxxx\n ");
   
   if (SDL_MUSTLOCK(screen)) SDL_UnlockSurface(screen);     
   SDL_Flip(screen);
